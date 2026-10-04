@@ -21,6 +21,20 @@ namespace Ucu.Poo.Fsm
         {
             // Crea un reproductor de música, una secuencia de entradas y
             // procesa esas entradas con el reproductor de música.
+            MusicPlayer player = new MusicPlayer();
+
+            InputSymbol[] inputs = new InputSymbol[]
+            {
+                player.Play,
+                player.Pause,
+                player.Play,
+                player.Play,
+                player.Stop
+            };
+
+            bool allAccepted = player.ProcessInputs(inputs);
+
+            Console.WriteLine("Todas las entradas provocaron un cambio: " + allAccepted);
         }
     }
 }

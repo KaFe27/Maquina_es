@@ -1,4 +1,6 @@
-public class InputSymbol
+namespace Ucu.Poo.Fsm
 {
-    
+    public class InputSymbol
+    {
+    }
 }
