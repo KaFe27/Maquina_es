@@ -15,12 +15,12 @@ namespace Ucu.Poo.Fsm
     public static class Program
     {
         /// <summary>
-        /// Punto de entrada al programa principal.
+        /// Punto de entrada al programa principal. Crea un reproductor de música,
+        /// una secuencia de entradas y procesa esas entradas con el reproductor.
         /// </summary>
         public static void Main()
         {
-            // Crea un reproductor de música, una secuencia de entradas y
-            // procesa esas entradas con el reproductor de música.
+            
             MusicPlayer player = new MusicPlayer();
 
             InputSymbol[] inputs = new InputSymbol[]

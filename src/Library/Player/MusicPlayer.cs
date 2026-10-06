@@ -1,5 +1,10 @@
 namespace Ucu.Poo.Fsm
 {
+    /// <summary>
+    /// Representa un reproductor de música modelado como una máquina de estados.
+    /// Tiene tres estados (stopped, playing y paused) y responde a los
+    /// botones Play, Pause y Stop.
+    /// </summary>
     public class MusicPlayer : StateMachine
     {
         public MusicPlayer()
@@ -27,10 +32,19 @@ namespace Ucu.Poo.Fsm
             this.AddState(paused);
         }
 
+        /// <summary>
+        /// Obtiene el símbolo que representa el botón Play.
+        /// </summary>
         public PlaySymbol Play { get; }
 
+        /// <summary>
+        /// Obtiene el símbolo que representa el botón Pause.
+        /// </summary>
         public PauseSymbol Pause { get; }
 
+        /// <summary>
+        /// Obtiene el símbolo que representa el botón Stop.
+        /// </summary>
         public StopSymbol Stop { get; }
     }
 }
